@@ -285,14 +285,14 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 (For all use cases below, the **System** is the `AddressBook` and the **Actor** is the `user`, unless specified otherwise)
 
-**Use case: Delete a person**
+**Use case 6: Delete a person**
 
 **MSS**
 
 1.  User requests to list persons
-2.  AddressBook shows a list of persons
+2.  LongTimeNoSee shows a list of persons
 3.  User requests to delete a specific person in the list
-4.  AddressBook deletes the person
+4.  LongTimeNoSee deletes the person
 
     Use case ends.
 
@@ -304,9 +304,49 @@ Priorities: High (must have) - `* * *`, Medium (nice to have) - `* *`, Low (unli
 
 * 3a. The given index is invalid.
 
-    * 3a1. AddressBook shows an error message.
+    * 3a1. LongTimeNoSee shows an error message.
 
       Use case resumes at step 2.
+
+**Use case 7: sort list**
+
+**MSS**
+
+1. User requests to list clients (UC3), which will be shown based on date added (default sort)
+2. User requests to sort list based on name (or any other metric)
+3. LongTimeNoSee shows the list of person, sorted in alphabetical order based on client’s name
+4. Use case ends.
+
+**Extensions**
+
+* 2a. Given sorting metric is invalid
+LongTimeNoSee shows an error message. Use case ends
+
+**Use case 8: pin user**
+
+**MSS**
+
+1. User can select certain clients to pin on top of the list
+2. LongTimeNoSee will display the pinned clients
+3. User will be able to see all pinned clients in all pages
+   Use case ends.
+
+**Extensions**
+* 2a. LongTimeNoSee sees clients will have a special highlighted box to differentiate from the rest
+
+
+**Use case 9: Find a contact**
+
+**MSS**
+1. User requests a search with a certain metric.
+2. LTNS shows a list of contacts with matching metrics.
+   Use case ends.
+
+**Extensions**
+* 2a. User requests another search.
+* 2a1. LTNS displays a new list of contacts with matching metrics.
+Use case ends.
+
 
 *{More to be added}*
 

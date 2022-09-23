@@ -47,7 +47,6 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 * Role: ?
 * Responsibilities: ?
 
-
 ### Colin Toh 
 <img src="images/cowlinn.png" width="200px">
 
@@ -66,4 +65,6 @@ You can reach us at the email `seer[at]comp.nus.edu.sg`
 [[portfolio](team/ssatu.md)]
 
 * Role: Developer
-* Responsibilities: ?
+* Responsibilities: Documentation, Testing, Deliverables and deadlines, Main reviewer for Colin
+* In-charge of features: Policy management 
+
